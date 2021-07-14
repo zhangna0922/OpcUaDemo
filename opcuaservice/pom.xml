@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.opcuaserver</groupId>
+    <artifactId>opcuaserver</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>opcuaserver</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.milo/opc-ua-stack -->
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>opc-ua-stack</artifactId>
+            <version>0.6.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.milo/dictionary-reader -->
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>dictionary-reader</artifactId>
+            <version>0.6.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.milo/server-examples -->
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>server-examples</artifactId>
+            <version>0.6.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.milo/stack-client -->
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>stack-client</artifactId>
+            <version>0.6.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.milo/sdk-client -->
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>sdk-client</artifactId>
+            <version>0.6.1</version>
+           <!-- <version>0.2.4</version>-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcpkix-jdk15on</artifactId>
+            <version>1.57</version>
+        </dependency>
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>sdk-server</artifactId>
+           <!-- <version>0.2.4</version>-->
+            <version>0.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.milo</groupId>
+            <artifactId>dictionary-manager</artifactId>
+            <version>0.6.1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-common -->
+      <!--  <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-common</artifactId>
+            <version>13.0.0</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-core -->
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-common</artifactId>
+            <version>4.8.0.Final</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
